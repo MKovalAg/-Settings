@@ -1,6 +1,9 @@
 # Settings
 
-1. Example code with the enum extension
+## 1. Example code with the enum extension
+
+
+
 
 enum MyRawValue {
     case appSettingsKey(AppSettingsKey)
@@ -55,6 +58,9 @@ enum NewKey: AppSettingsKeyProtocol {
     }
 }
 
-2. example of getting all new .case
+## 2. example of getting all new .case
+
+
+
 
     let allCases = NewKey.allCases
