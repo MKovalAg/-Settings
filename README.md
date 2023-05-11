@@ -2,21 +2,22 @@
 
 ## 1. Example code with the enum extension
 
-
-
-
+```
 enum MyRawValue {
     case appSettingsKey(AppSettingsKey)
     case newKey(NewKey)
 }
 
 enum NewKey: AppSettingsKeyProtocol {
+    // auth
     case newUsername
     case newPassword
     case newToken
     
+    // app
     case newIsSeenOnboarding
     
+    // newCase
     case error
     
     typealias RawValue = MyRawValue
@@ -54,13 +55,10 @@ enum NewKey: AppSettingsKeyProtocol {
         }
     }
 }
-
-
-
+```
 
 ## 2. example of getting all new .case
 
-
-
-
+```
     let allCases = NewKey.allCases
+```
